@@ -1,0 +1,6 @@
+boto3~=1.26.90
+botocore~=1.29.90
+fastapi~=0.95.0
+spleeter
+ffmpeg
+yt_dlp
