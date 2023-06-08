@@ -20,8 +20,6 @@ jobs:
             login-server: ${{ secrets.REGISTRY_LOGIN_SERVER }}
             username: ${{ secrets.REGISTRY_USERNAME }}
             password: ${{ secrets.REGISTRY_PASSWORD }}
-            AWS_ACCESS_KEY: ${{ secrets.AWS_S3_ACCESS_KEY }}
-            AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_S3_SECRET_ACCESS_KEY }}
         - run: |
             docker build . -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/yt-dl-client:latest
             docker push ${{ secrets.REGISTRY_LOGIN_SERVER }}/yt-dl-client:latest
